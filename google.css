@@ -5,6 +5,7 @@ nav {
     justify-content: flex-end;
 }
 
+
 ul {
     list-style-type: none;
     display: flex;
@@ -12,4 +13,19 @@ ul {
 
 li {
     padding: 0 5px;
+}
+
+main {
+    margin: auto;
+    width: min-content;
+}
+
+input[type="search"] {
+    width: 500px;
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
 }
