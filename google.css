@@ -3,6 +3,7 @@
 nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 
@@ -16,8 +17,10 @@ li {
 }
 
 main {
-    margin: auto;
-    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="search"] {
@@ -28,4 +31,8 @@ input[type="search"] {
 footer {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width:100%;
+    bottom: 1px;
+    right: 1px;
 }
