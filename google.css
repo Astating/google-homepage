@@ -84,6 +84,7 @@ button {
 form {
   max-width: 90%;
   position: relative;
+  left: 30px;
 }
 
 .search {
