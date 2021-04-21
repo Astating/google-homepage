@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
@@ -32,10 +36,10 @@ li:hover {
 }
 
 .material-icons-outlined {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -52,6 +56,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 main * {
@@ -59,14 +64,45 @@ main * {
 }
 
 input[type="search"] {
-  width: 600px;
+  width: 550px;
   height: 40px;
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 50px;
+  background-color: transparent;
+  padding: 0 40px;
+  border: 1px solid #e1e1e1;
+}
+input[type="search"]:hover {
+  background-color: gold;
+  box-shadow: 1px 1px 1px 1px purple;
 }
 
 button {
   margin: auto 5px;
+}
+
+form {
+  max-width: 90%;
+  position: relative;
+}
+
+.search {
+  position:absolute;
+  left: 10px;
+  top: 6px;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #5f6368;
+  
 }
 
 /*FOOTER*/
