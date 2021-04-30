@@ -35,6 +35,14 @@ li:hover {
   border-radius: 50%;
 }
 
+.profile-pic:hover {
+  transform: scale(110%);
+}
+
+.profile-pic:active {
+  transform: translate(1px, 1px);
+}
+
 .material-icons-outlined {
   font-family: "Material Icons";
   font-weight: normal;
