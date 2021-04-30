@@ -36,7 +36,7 @@ li:hover {
 }
 
 .profile-pic:hover {
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 
 .profile-pic:active {
@@ -70,6 +70,9 @@ main {
 main * {
   margin: 10px auto;
 }
+
+form {
+  width: 99%;}
 
 label {
   display: flex;
@@ -166,16 +169,22 @@ footer {
   font-size: 14px;
 }
 @media (max-width: 600px) {
-  form {
-    width: 99%;
-  }
   footer {
     flex-direction: column;
     align-items: center;
   }
+
+  main img {
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 330px) {
+  .googling-buttons {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
   footer {flex-direction: row;}
   footer ul{
     flex-direction: column;
