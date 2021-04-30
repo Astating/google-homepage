@@ -111,10 +111,18 @@ input[type="submit"]:active {
 }
 
 @keyframes animation {
-  0% {transform:rotate(0);}
-  30% {transform: rotate(0.05turn);}
-  60% {transform: rotate(-0.05turn);}
-  90% {transform:rotate(0);}
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(0.05turn);
+  }
+  60% {
+    transform: rotate(-0.05turn);
+  }
+  90% {
+    transform: rotate(0);
+  }
 }
 
 .search,
@@ -133,6 +141,10 @@ input[type="submit"]:active {
   color: #6e7175;
 }
 
+.mic:hover {
+  color: blue;
+}
+
 /*FOOTER*/
 footer {
   display: flex;
@@ -144,4 +156,21 @@ footer {
   background-color: #eee;
   color: #70757a;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  form {
+    width: 99%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  footer {flex-direction: row;}
+  footer ul{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
