@@ -63,27 +63,34 @@ main * {
   margin: 10px auto;
 }
 
-input[type="search"] {
-  width: 550px;
-  height: 40px;
-  max-width: 90%;
-  border-radius: 50px;
-  background-color: transparent;
-  padding: 0 40px;
+label {
+  display: flex;
   border: 1px solid #e1e1e1;
-}
-input[type="search"]:hover {
-  background-color: gold;
-  box-shadow: 1px 1px 1px 1px purple;
+  border-radius: 50px;
+  width: 600px;
+  max-width: 90%;
+  justify-content: flex-start;
+  padding: 0 10px;
 }
 
-button {
+label:hover {
+  box-shadow: 0 1px 3px rgba(32, 35, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+input[type="search"] {
+  border: none;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #f1f1f1;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
   color: #3c4043;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
-  margin: 0 4px;
+  margin: 11px 4px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -93,25 +100,25 @@ button {
   user-select: none;
 }
 
-button:hover {
-  color: purple;
-  background-color: gold;
-  border-radius: 50%;
-  font-weight: bold;
-  box-shadow: 1px 1px 1px 1px purple;
-
+input[type="submit"]:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  animation: animation 0.2s ease;
 }
 
-form {
-  max-width: 90%;
-  position: relative;
-  left: 30px;
+input[type="submit"]:active {
+  transform: translate(1px, 2px);
 }
 
-.search {
-  position:absolute;
-  left: 10px;
-  top: 6px;
+@keyframes animation {
+  0% {transform:rotate(0);}
+  30% {transform: rotate(0.05turn);}
+  60% {transform: rotate(-0.05turn);}
+  90% {transform:rotate(0);}
+}
+
+.search,
+.mic {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
@@ -123,8 +130,7 @@ form {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: #5f6368;
-  
+  color: #6e7175;
 }
 
 /*FOOTER*/
